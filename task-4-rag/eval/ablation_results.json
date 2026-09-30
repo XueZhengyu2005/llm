@@ -1,0 +1,50 @@
+{
+  "chunk_128": {
+    "recall_at_1": 0.367,
+    "recall_at_3": 0.467,
+    "recall_at_5": 0.6,
+    "recall_at_10": 0.833,
+    "mrr": 0.475,
+    "n": 30
+  },
+  "chunk_256": {
+    "recall_at_1": 0.367,
+    "recall_at_3": 0.667,
+    "recall_at_5": 0.7,
+    "recall_at_10": 0.833,
+    "mrr": 0.511,
+    "n": 30
+  },
+  "chunk_512": {
+    "recall_at_1": 0.367,
+    "recall_at_3": 0.767,
+    "recall_at_5": 0.867,
+    "recall_at_10": 0.933,
+    "mrr": 0.588,
+    "n": 30
+  },
+  "chunk_1024": {
+    "recall_at_1": 0.333,
+    "recall_at_3": 0.7,
+    "recall_at_5": 0.767,
+    "recall_at_10": 0.833,
+    "mrr": 0.521,
+    "n": 30
+  },
+  "no_reranker": {
+    "recall_at_1": 0.367,
+    "recall_at_3": 0.667,
+    "recall_at_5": 0.7,
+    "recall_at_10": 0.833,
+    "mrr": 0.511,
+    "n": 30
+  },
+  "with_reranker": {
+    "recall_at_1": 0.5,
+    "recall_at_3": 0.7,
+    "recall_at_5": 0.933,
+    "recall_at_10": 0.933,
+    "mrr": 0.635,
+    "n": 30
+  }
+}

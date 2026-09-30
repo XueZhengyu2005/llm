@@ -1,0 +1,20 @@
+{
+  "base_model": "/root/autodl-tmp/llm-beginner/task-3-sft-dpo/models/Qwen2.5-0.5B",
+  "r": 16,
+  "alpha": 32.0,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj",
+    "lm_head"
+  ],
+  "examples": 20000,
+  "epochs": 1,
+  "max_length": 512,
+  "eos_weight": 20.0,
+  "learning_rate": 0.0001
+}

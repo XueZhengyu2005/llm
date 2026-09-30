@@ -1,0 +1,19 @@
+{
+  "base_model": "/root/autodl-tmp/llm-beginner/task-3-sft-dpo/models/Qwen2.5-0.5B",
+  "sft_lora": "/root/autodl-tmp/llm-beginner/task-3-sft-dpo/ckpt/sft/lora.pt",
+  "r": 16,
+  "alpha": 32.0,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj",
+    "lm_head"
+  ],
+  "beta": 0.1,
+  "pairs": 800,
+  "epochs": 1
+}

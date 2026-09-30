@@ -1,0 +1,293 @@
+[
+  {
+    "test": "tools_individual",
+    "pass": true,
+    "results": {
+      "calculator": true,
+      "python_sandbox": true,
+      "file_search": true,
+      "wiki": "skip(网络不可用？): https://zh.wikipedia.org/w/api.php"
+    },
+    "network_skipped": [
+      "wiki"
+    ]
+  },
+  {
+    "test": "multi_tool_success_rate",
+    "pass": true,
+    "rate": 0.8,
+    "answer_correct_rate": 0.8,
+    "tool_execution_success_rate": 0.5,
+    "expected_tool_coverage_rate": 1.0,
+    "grounded_success_rate": 0.6,
+    "n": 10,
+    "details": [
+      {
+        "id": 1,
+        "answer_correct": true,
+        "tool_execution_success": true,
+        "expected_tools_succeeded": true,
+        "grounded_success": true,
+        "final_answer_preview": "结果为 456831，共有 6 位。",
+        "expected_answer_contains": [
+          "456831",
+          [
+            "6位",
+            "6 位",
+            "六位",
+            "6 digits"
+          ]
+        ],
+        "expected_tools": [
+          "calculator"
+        ],
+        "used_tools": [
+          "calculator",
+          "calculator"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 2,
+        "answer_correct": true,
+        "tool_execution_success": true,
+        "expected_tools_succeeded": true,
+        "grounded_success": true,
+        "final_answer_preview": "100 以内的所有质数之和为 1060。",
+        "expected_answer_contains": [
+          "1060"
+        ],
+        "expected_tools": [
+          "python_sandbox"
+        ],
+        "used_tools": [
+          "python_sandbox"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 3,
+        "answer_correct": true,
+        "tool_execution_success": false,
+        "expected_tools_succeeded": true,
+        "grounded_success": true,
+        "final_answer_preview": "在 data/agent-fixtures 目录下共有 2 个 .md 文件。",
+        "expected_answer_contains": [
+          [
+            "2",
+            "两"
+          ]
+        ],
+        "expected_tools": [
+          "file_search"
+        ],
+        "used_tools": [
+          "file_search",
+          "wiki"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 4,
+        "answer_correct": true,
+        "tool_execution_success": false,
+        "expected_tools_succeeded": false,
+        "grounded_success": false,
+        "final_answer_preview": "图灵机是由阿兰·图灵发明的。",
+        "expected_answer_contains": [
+          [
+            "Turing",
+            "图灵"
+          ]
+        ],
+        "expected_tools": [
+          "wiki"
+        ],
+        "used_tools": [
+          "wiki"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 5,
+        "answer_correct": false,
+        "tool_execution_success": false,
+        "expected_tools_succeeded": false,
+        "grounded_success": false,
+        "final_answer_preview": "Geoffrey Hinton 在 2026 年将会是 79 岁。",
+        "expected_answer_contains": [
+          "1947",
+          [
+            "78",
+            "79"
+          ]
+        ],
+        "expected_tools": [
+          "wiki",
+          "calculator"
+        ],
+        "used_tools": [
+          "wiki",
+          "calculator"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 6,
+        "answer_correct": true,
+        "tool_execution_success": true,
+        "expected_tools_succeeded": true,
+        "grounded_success": true,
+        "final_answer_preview": "函数测试结果为：'level' 是回文，True；'world' 不是回文，False。",
+        "expected_answer_contains": [
+          "level",
+          "True",
+          "world",
+          "False"
+        ],
+        "expected_tools": [
+          "python_sandbox"
+        ],
+        "used_tools": [
+          "python_sandbox"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 7,
+        "answer_correct": false,
+        "tool_execution_success": false,
+        "expected_tools_succeeded": true,
+        "grounded_success": false,
+        "final_answer_preview": "未在指定目录中找到包含 'TODO' 的文件路径。",
+        "expected_answer_contains": [
+          "todo_note.md"
+        ],
+        "expected_tools": [
+          "file_search"
+        ],
+        "used_tools": [
+          "file_search",
+          "file_search",
+          "file_search"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 8,
+        "answer_correct": true,
+        "tool_execution_success": true,
+        "expected_tools_succeeded": true,
+        "grounded_success": true,
+        "final_answer_preview": "45.01111",
+        "expected_answer_contains": [
+          [
+            "45.011110",
+            "45.01111"
+          ]
+        ],
+        "expected_tools": [
+          "calculator",
+          "python_sandbox"
+        ],
+        "used_tools": [
+          "calculator",
+          "python_sandbox",
+          "calculator"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 9,
+        "answer_correct": true,
+        "tool_execution_success": false,
+        "expected_tools_succeeded": false,
+        "grounded_success": false,
+        "final_answer_preview": "Transformer 模型在 2017 年被提出，到 2026 年已经过去了 9 年。",
+        "expected_answer_contains": [
+          "2017",
+          "9"
+        ],
+        "expected_tools": [
+          "wiki",
+          "calculator"
+        ],
+        "used_tools": [
+          "wiki",
+          "calculator"
+        ],
+        "expected_tools_covered": true
+      },
+      {
+        "id": 10,
+        "answer_correct": true,
+        "tool_execution_success": true,
+        "expected_tools_succeeded": true,
+        "grounded_success": true,
+        "final_answer_preview": "这是任务五的本地文件检索测试文件。",
+        "expected_answer_contains": [
+          "任务五",
+          "本地文件检索测试文件"
+        ],
+        "expected_tools": [
+          "file_search"
+        ],
+        "used_tools": [
+          "file_search",
+          "file_search",
+          "file_search",
+          "file_search",
+          "file_search",
+          "file_search",
+          "file_search"
+        ],
+        "expected_tools_covered": true
+      }
+    ]
+  },
+  {
+    "test": "error_recovery",
+    "pass": true,
+    "recovery_rate": 0.8,
+    "tool_verified_recovery_rate": 0.6,
+    "injected": 5,
+    "n": 5,
+    "details": [
+      {
+        "id": 1,
+        "injected": true,
+        "recovered": true,
+        "tool_verified_recovery": true,
+        "answer": "计算 (123 + 456) * 789 的结果是 456831，其位数为 6。"
+      },
+      {
+        "id": 2,
+        "injected": true,
+        "recovered": true,
+        "tool_verified_recovery": true,
+        "answer": "1060"
+      },
+      {
+        "id": 3,
+        "injected": true,
+        "recovered": true,
+        "tool_verified_recovery": true,
+        "answer": "在 data/agent-fixtures 目录下找到了 2 个 .md 文件，分别是 README.md 和 todo_note.md。"
+      },
+      {
+        "id": 4,
+        "injected": true,
+        "recovered": true,
+        "tool_verified_recovery": false,
+        "answer": "阿兰·图灵"
+      },
+      {
+        "id": 5,
+        "injected": true,
+        "recovered": false,
+        "tool_verified_recovery": false,
+        "answer": "Geoffrey Hinton 在 2026 年的年龄是 79 岁。"
+      }
+    ]
+  }
+]

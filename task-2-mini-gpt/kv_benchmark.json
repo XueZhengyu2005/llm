@@ -1,0 +1,20 @@
+[
+  {
+    "tokens": 50,
+    "cache_seconds": 0.14740058779716492,
+    "no_cache_seconds": 0.17544370889663696,
+    "speedup": 1.1902510805320643
+  },
+  {
+    "tokens": 100,
+    "cache_seconds": 0.29325634241104126,
+    "no_cache_seconds": 0.35355230420827866,
+    "speedup": 1.2056083810549743
+  },
+  {
+    "tokens": 108,
+    "cache_seconds": 0.3145763576030731,
+    "no_cache_seconds": 0.3755795881152153,
+    "speedup": 1.1939218540673517
+  }
+]

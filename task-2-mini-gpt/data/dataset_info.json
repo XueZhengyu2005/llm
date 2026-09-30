@@ -1,0 +1,14 @@
+{
+  "dataset": "tinystories_zh",
+  "train": "train.txt",
+  "dev": "dev.txt",
+  "ppl_threshold": 50,
+  "source": "Gabrui/multilingual_TinyStories",
+  "config": "chinese",
+  "source_file": "/root/autodl-tmp/llm-beginner/task-2-mini-gpt/data/tinystories_zh/train-00000-of-00005.parquet",
+  "stories": 295293,
+  "train_stories": 265763,
+  "dev_stories": 29530,
+  "bytes": 209715118,
+  "split": "story-level"
+}

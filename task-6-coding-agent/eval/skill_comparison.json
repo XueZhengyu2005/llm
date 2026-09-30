@@ -1,0 +1,14 @@
+[
+  {
+    "mode": "with_skill",
+    "success": true,
+    "steps": 5,
+    "time_s": 32.8
+  },
+  {
+    "mode": "without_skill",
+    "success": false,
+    "steps": 1,
+    "time_s": 25.3
+  }
+]
